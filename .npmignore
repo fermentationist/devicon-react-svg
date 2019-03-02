@@ -1,0 +1,12 @@
+/node_modules
+/test
+/dev
+/src
+
+.gitignore
+.babelrc
+
+devicon-react-svg.test.js
+yarn.lock
+README.html
+rollup.config.js
