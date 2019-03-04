@@ -1,8 +1,8 @@
 # devicon-react-svg
 
-**devicon-react-svg** is an implementation of the [Devicons](https://github.com/vorillaz/devicons) icon library, which contains the logos of various popular programming languages, frameworks and design and development tools. 
+**devicon-react-svg** is an implementation of the [Devicons](http://vorillaz.github.io/devicons/) icon library (which contains the logos of various popular programming languages, frameworks and design and development tools) for React. 
 
-**devicon-react-svg** returns a functional React component that, when passed the name of a Devicon as the `icon` prop, will render it as an inline svg.
+**devicon-react-svg** returns a functional React component that, when passed the name of a Devicon as the `icon` prop, will render it as an inline SVG (Scalable Vector Graphics) image.
 
 ---
 ## Installation
@@ -10,7 +10,7 @@ To install with **npm**:
 ```bash
 npm install "devicon-react-svg" --save
 ```
-with **Yarn**:
+To install with **Yarn**:
 ```bash
 yarn add "devicon-react-svg"
 ```
@@ -30,13 +30,13 @@ const Demo = props => {
 ReactDOM.render(<Demo/>, document.getElementById('root'));
 ```
 
-You can style the svg component by passing in a `style` prop or a `viewBox` prop, like this...
+You can style the SVG component by passing in a `style` prop or a `viewBox` prop, like this...
 
 ```js 
 const devIconStyle = {
     fill: "thistle",
     width: "150px",
-}
+};
 
 const Demo = props => {
     return (
@@ -45,7 +45,7 @@ const Demo = props => {
 }
 ```
 
-or by using a fun package like [styled-components](https://www.npmjs.com/package/styled-components)...
+or by using a library like [styled-components](https://www.npmjs.com/package/styled-components)...
 
 ```js 
 import styled from "styled-components";
@@ -61,12 +61,12 @@ const Demo = props => {
 ```
 ---
 ##Additional exports
-A list of the icon names accepted by the component can be found here, at the [Devicons cheatsheet](http://vorillaz.github.io/devicons/#/cheat), or can be returned as an array by using the package's `iconList` export. **devicon-react-svg** also exports the `RandomIcon` component to display a randomly chosen icon.
+A list of the icon names accepted by the component can be found in the [Devicons cheatsheet](http://vorillaz.github.io/devicons/#/cheat), or can be returned as an array by using the package's `iconList` export. **devicon-react-svg** also exports the `RandomIcon` component to display a randomly chosen icon.
 
 ```js
 import DevIcon, {iconList, RandomIcon} from "devicon-react-svg";
 
-console.log(`Here is a list of icon names used by this component: ${iconNames}`);
+console.log(`Here is a list of icon names used by this component: ${iconList}`);
 
 const Demo = props => {
     return (<RandomIcon />);
@@ -78,7 +78,7 @@ const Demo = props => {
 
 Thank you to [Theodore Vorillas](https://www.vorillaz.com/), who created the font and icon collection that this component is based on, and which is the source of all of the svg path data used in this package.
 
-You can find the original repository here: [Devicons](https://github.com/vorillaz/devicons).
+You can find his original repository here: [Devicons](https://github.com/vorillaz/devicons).
 
 ---
 ## License
