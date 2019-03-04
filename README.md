@@ -59,8 +59,10 @@ const Demo = props => {
     return (<StyledIcon icon="css3" />);
 }
 ```
+---
 
 ##Additional exports
+
  A list of the icon names accepted by the component can be found here, at the [Devicons cheatsheet](http://vorillaz.github.io/devicons/#/cheat), or can be returned as an array by using the package's `iconList` export. **devicon-react-svg** also exports the `RandomIcon` component to display a randomly chosen icon.
 
 ```js
