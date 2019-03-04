@@ -60,10 +60,8 @@ const Demo = props => {
 }
 ```
 ---
-
 ##Additional exports
-
- A list of the icon names accepted by the component can be found here, at the [Devicons cheatsheet](http://vorillaz.github.io/devicons/#/cheat), or can be returned as an array by using the package's `iconList` export. **devicon-react-svg** also exports the `RandomIcon` component to display a randomly chosen icon.
+A list of the icon names accepted by the component can be found here, at the [Devicons cheatsheet](http://vorillaz.github.io/devicons/#/cheat), or can be returned as an array by using the package's `iconList` export. **devicon-react-svg** also exports the `RandomIcon` component to display a randomly chosen icon.
 
 ```js
 import DevIcon, {iconList, RandomIcon} from "devicon-react-svg";
