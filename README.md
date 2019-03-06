@@ -1,6 +1,6 @@
 # devicon-react-svg
 
-**devicon-react-svg** is an implementation of the [Devicons](http://vorillaz.github.io/devicons/) icon library (which contains the logos of various popular programming languages, frameworks and design and development tools) for React. 
+**devicon-react-svg** is an implementation of the **[Devicons](http://vorillaz.github.io/devicons/)** icon library (which contains the logos of various popular programming languages, frameworks and design and development tools) for **React**. 
 
 **devicon-react-svg** returns a functional React component that, when passed the name of a Devicon as the `icon` prop, will render it as an inline SVG (Scalable Vector Graphics) image.
 
@@ -44,7 +44,7 @@ const Demo = props => {
         );
 }
 ```
-or by using a library like [styled-components](https://www.npmjs.com/package/styled-components)...
+or by using a library like **[styled-components](https://www.npmjs.com/package/styled-components)**...
 
 ```js 
 import styled from "styled-components";
