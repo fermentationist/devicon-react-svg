@@ -8,12 +8,12 @@ const DevIcon = props => {
     return (
         <React.Fragment>
             {props.children}
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox={props.viewBox || "0 0 36 36"} className={`${icon}-icon`} {...props}>
+            <svg viewBox={props.viewBox || "0 0 36 36"} className={`${icon}-icon`} {...props}>
                 {
                     paths.map(path => {
-                        return (
-                        <path d={path}></path>
-                        );
+                        return path && path.length > 0 ? (
+                                    <path d={path}></path>
+                                ) : null;
                     })
                 }
             </svg>

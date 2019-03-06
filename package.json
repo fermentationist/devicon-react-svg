@@ -19,6 +19,15 @@
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-uglify": "^6.0.2"
   },
-  "dependencies": {},
-  "keywords": ["devicon", "icon", "svg", "react", "component", "logo"]
+  "dependencies": {
+    "react-devicon": "^0.1.9"
+  },
+  "keywords": [
+    "devicon",
+    "icon",
+    "svg",
+    "react",
+    "component",
+    "logo"
+  ]
 }
