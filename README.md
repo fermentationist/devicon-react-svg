@@ -29,7 +29,10 @@ const Demo = props => {
 
 ReactDOM.render(<Demo/>, document.getElementById('root'));
 ```
+---
+## Props
 
+### `style` and `viewBox`
 You can style the SVG component by passing in a `style` prop or a `viewBox` prop, like this...
 
 ```js 
@@ -44,7 +47,6 @@ const Demo = props => {
         );
 }
 ```
-
 or by using a library like [styled-components](https://www.npmjs.com/package/styled-components)...
 
 ```js 
@@ -59,8 +61,17 @@ const Demo = props => {
     return (<StyledIcon icon="css3" />);
 }
 ```
+
+### `addpaths`
+
+The `addpaths` prop allows you to pass additional path data which will be added as `<path>` tags within the returned `<svg>` element. `addpaths` accepts an array of string values, each of which will be mapped to one `<path>` element as its `d` property.
+
+```js
+const
+```
+
 ---
-##Additional exports
+## Additional exports
 A list of the icon names accepted by the component can be found in the [Devicons cheatsheet](http://vorillaz.github.io/devicons/#/cheat), or can be returned as an array by using the package's `iconList` export. **devicon-react-svg** also exports the `RandomIcon` component to display a randomly chosen icon.
 
 ```js
@@ -75,6 +86,8 @@ const Demo = props => {
 
 ---
 ## Credits
+
+**devicon-react-svg** was made by Dennis Hodges who, while reasonably clever and curious, does not purport to be an expert at anything, let alone SVG or React. In using it, please know that it was created for autodidactic purposes, and no claims are made about its integrity, security, or utility.
 
 Thank you to [Theodore Vorillas](https://www.vorillaz.com/), who created the font and icon collection that this component is based on, and which is the source of all of the svg path data used in this package.
 
