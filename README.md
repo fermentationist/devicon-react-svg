@@ -1,4 +1,3 @@
-<body style="background-color: black;">
 # devicon-react-svg
 
 **devicon-react-svg** is an implementation of the [Devicons](http://vorillaz.github.io/devicons/) icon library (which contains the logos of various popular programming languages, frameworks and design and development tools) for React. 
@@ -76,11 +75,11 @@ const Demo = props => {
 ---
 ## Credits
 
-**devicon-react-svg** was made by Dennis Hodges who, while reasonably clever and curious, does not purport to be an expert at anything, let alone SVG or React. In using it, please know that it was created for autodidactic purposes, and no claims are made about its integrity, security, or utility.
+**devicon-react-svg** was made by Dennis Hodges, a Javascript developer.
 
 Thank you to [Theodore Vorillas](https://www.vorillaz.com/), who created the font and icon collection that this component is based on, and which is the source of all of the svg path data used in this package.
 
-You can find his original repository here: [Devicons](https://github.com/vorillaz/devicons).
+You can find his original icon repository here: [Devicons](https://github.com/vorillaz/devicons).
 
 ---
 ## License
@@ -107,5 +106,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-
-</body>
