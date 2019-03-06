@@ -3,12 +3,12 @@ import React from "react";
 import iconNames from "./resources/iconNames";
 
 const DevIcon = props => {
-    let icon = typeof props === "string" ? props : props.icon;
-    const paths = props.addpaths ? pathData[icon].concat(props.addpaths) : pathData[icon];
+    const iconProps = typeof props === "string" ? props : props.icon;
+    const paths = iconProps.split(" ").map(x => pathData[x]).reduce((accum, x) => accum.concat(x));
     return (
         <React.Fragment>
             {props.children}
-            <svg viewBox={props.viewBox || "0 0 36 36"} className={`${icon}-icon`} {...props}>
+            <svg viewBox={props.viewBox || "0 0 32 32"} className={`${iconProps}-icon`} {...props}>
                 {
                     paths.map((path, i) => {
                         return (<path d={path} key={i}></path>);
@@ -18,6 +18,7 @@ const DevIcon = props => {
         </React.Fragment>
     );
 }
+
 export default DevIcon;
 
 export const iconList = iconNames;

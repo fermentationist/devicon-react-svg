@@ -1,3 +1,4 @@
+<body style="background-color: black;">
 # devicon-react-svg
 
 **devicon-react-svg** is an implementation of the [Devicons](http://vorillaz.github.io/devicons/) icon library (which contains the logos of various popular programming languages, frameworks and design and development tools) for React. 
@@ -30,9 +31,6 @@ const Demo = props => {
 ReactDOM.render(<Demo/>, document.getElementById('root'));
 ```
 ---
-## Props
-
-### `style` and `viewBox`
 You can style the SVG component by passing in a `style` prop or a `viewBox` prop, like this...
 
 ```js 
@@ -61,15 +59,6 @@ const Demo = props => {
     return (<StyledIcon icon="css3" />);
 }
 ```
-
-### `addpaths`
-
-The `addpaths` prop allows you to pass additional path data which will be added as `<path>` tags within the returned `<svg>` element. `addpaths` accepts an array of string values, each of which will be mapped to one `<path>` element as its `d` property.
-
-```js
-const
-```
-
 ---
 ## Additional exports
 A list of the icon names accepted by the component can be found in the [Devicons cheatsheet](http://vorillaz.github.io/devicons/#/cheat), or can be returned as an array by using the package's `iconList` export. **devicon-react-svg** also exports the `RandomIcon` component to display a randomly chosen icon.
@@ -118,3 +107,5 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+</body>
