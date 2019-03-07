@@ -20,7 +20,6 @@
     "rollup-plugin-uglify": "^6.0.2"
   },
   "dependencies": {
-    "react-devicon": "^0.1.9"
   },
   "keywords": [
     "devicon",
