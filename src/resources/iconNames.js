@@ -109,6 +109,7 @@ const iconNames = [
     "krakenjs_badge",
     "laravel",
     "less",
+    "linkedin",
     "linux",
     "magento",
     "mailchimp",
