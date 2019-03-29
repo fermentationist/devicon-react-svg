@@ -54,6 +54,7 @@ const iconNames = [
     "dropbox",
     "drupal",
     "eclipse",
+    "email",
     "ember",
     "envato",
     "erlang",
