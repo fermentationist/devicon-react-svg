@@ -177,6 +177,7 @@ const iconNames = [
     "techcrunch",
     "terminal",
     "terminal_badge",
+    "tophome",
     "travis",
     "trello",
     "typo3",
