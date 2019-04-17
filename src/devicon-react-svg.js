@@ -10,13 +10,18 @@ const DevIcon = props => {
     return (
         <React.Fragment>
             {props.children}
-            <svg viewBox={props.viewBox || "0 0 32 32"} className={`${iconProps}-icon`} data-icon={iconProps}  {...props}>
-                {
-                    paths.map((path, i) => {
-                        return (<path d={path} key={i}></path>);
-                    })
-                }
-            </svg>
+            {   !paths ? (
+                    <span className={`${iconProps}-icon-not-found`}>{props.icon}</span>
+                    ) : (
+                    <svg viewBox={props.viewBox || "0 0 32 32"} className={`${iconProps}-icon`} data-icon={iconProps}  {...props}>
+                        {
+                            paths.map((path, i) => {
+                                return (<path d={path} key={i}></path>);
+                            })
+                        }
+                    </svg>
+                )
+            }
         </React.Fragment>
     );
 }
