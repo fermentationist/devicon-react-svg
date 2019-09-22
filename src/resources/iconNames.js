@@ -97,13 +97,13 @@ const iconNames = [
     "ionic",
     "java",
     "javascript",
-    "javascript_1",
+    "javascript_shield",
     "jekyll_small",
     "jenkins",
     "jira",
     "joomla",
-    "jquery_logo",
-    "jquery_ui_logo",
+    "jquery",
+    "jquery_ui",
     "js_badge",
     "komodo",
     "krakenjs",
@@ -180,12 +180,18 @@ const iconNames = [
     "tophome",
     "travis",
     "trello",
+    "typescript", // new this version
+    "typescript_badge", // new this version
     "typo3",
     "ubuntu",
     "uikit",
     "unity_small",
     "vim",
     "visualstudio",
+    "vuejs", // new this version
+    "vuejs_color", // new this version
+    "webpack", // new this version
+    "webpack_color", // new this version
     "w3c",
     "webplatform",
     "windows",
