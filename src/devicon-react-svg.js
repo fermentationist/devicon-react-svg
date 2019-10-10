@@ -1,7 +1,6 @@
 import pathData from "./resources/pathData.js";
 import React, {Component} from "react";
 import iconNames from "./resources/iconNames.js";
-// import "./temp.css";
 
 class DevIcon extends Component {
     constructor (props) {
