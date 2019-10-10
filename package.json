@@ -1,6 +1,6 @@
 {
   "name": "devicon-react-svg",
-  "version": "0.1.96",
+  "version": "0.2.0",
   "description": "devicon-react-svg is an implementation of the Devicons icon library, which contains the logos of various popular programming languages, frameworks and design and development tools. devicon-react-svg returns a functional React component that, when passed the name of a Devicon as the icon prop, will render it as an inline svg.",
   "main": "dist/devicon-react-svg.min.js",
   "scripts": {
