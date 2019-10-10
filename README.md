@@ -8,19 +8,19 @@
 ## Installation
 To install with **npm**:
 ```bash
-npm install "devicon-react-svg" --save
+npm install --save devicon-react-svg
 ```
 To install with **Yarn**:
 ```bash
-yarn add "devicon-react-svg"
+yarn add devicon-react-svg
 ```
 ---
 ## Usage
 Import the default export from **devicon-react-svg** and use it in your JSX as you would any other React component. It accepts the prop `icon`, which should be the name of the Devicon as a string.
 
 ```js
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 import DevIcon from "devicon-react-svg";
 
 const Demo = props => {
