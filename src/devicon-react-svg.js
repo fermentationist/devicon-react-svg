@@ -19,7 +19,7 @@ class DevIcon extends Component {
         this.setStrokeColor = this.setStrokeColor.bind(this);
     }
     setStrokeColor (thisComponent) {
-        const computedFill = getComputedStyle(thisComponent).fill;
+        const computedFill = typeof window !== undefined && getComputedStyle(thisComponent).fill;
         this.setState({
             strokeColor: computedFill,
         })
