@@ -2,25 +2,33 @@
   "name": "devicon-react-svg",
   "version": "0.2.3",
   "description": "devicon-react-svg is an implementation of the Devicons icon library, which contains the logos of various popular programming languages, frameworks and design and development tools. devicon-react-svg returns a functional React component that, when passed the name of a Devicon as the icon prop, will render it as an inline svg.",
-  "main": "dist/devicon-react-svg.min.js",
+  "files": [
+    "lib/**/*"
+  ],
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "jsnext:main": "lib/index.es.js",
+  "typings": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c -o dist/devicon-react-svg.min.js"
+    "test": "react-scripts test",
+    "build": "rollup -c",
+    "start": "rollup -c -w",
+    "prepare": "npm run build"
   },
   "author": "fermentationist (Dennis Hodges)",
   "license": "MIT",
-  "devDependencies": {
-    "@babel/core": "^7.3.4",
-    "@babel/preset-env": "^7.3.4",
-    "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.5",
-    "react": "^16.8.3",
-    "rollup": "^1.4.0",
-    "rollup-plugin-babel": "^4.3.2",
-    "rollup-plugin-uglify": "^6.0.4",
-    "svg_pathify": "0.0.8"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  "dependencies": {},
+  "repository": {
+      "type": "git",
+      "url": "git+https://github.com/fermentationist/devicon-react-svg.git"
+  },
+  "bugs": "https://github.com/fermentationist/devicon-react-svg/issues",
+  "homepage": "https://github.com/fermentationist/devicon-react-svg",
   "keywords": [
     "devicon",
     "devicons",
@@ -33,5 +41,27 @@
     "logos",
     "technology",
     "tech"
-  ]
+  ],
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.1",
+    "react-dom": ">=17.0.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.1",
+    "@types/jest": "^26.0.19",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0",
+    "react-scripts": "4.0.1",
+    "rollup": "^2.35.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-typescript2": "^0.29.0",
+    "typescript": "~4.1.3"
+  }
 }

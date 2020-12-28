@@ -1,22 +1,32 @@
-// rollup.config.js
-import {uglify} from "rollup-plugin-uglify";
-import babel from "rollup-plugin-babel";
 
-const config = {
-    input: "src/devicon-react-svg.js",
-    external: ["react"],
-    output: {
-        format: "umd",
-        name: "devicon-react-svg",
-        globals: {
-            react: "React"
-        }
+import commonjs from "@rollup/plugin-commonjs";
+import resolve from "@rollup/plugin-node-resolve";
+import typescript from "rollup-plugin-typescript2";
+
+import pkg from "./package.json";
+
+export default {
+  input: "src/index.tsx",
+  output: [
+    {
+      file: pkg.main,
+      format: "cjs",
+      exports: "named",
+      sourcemap: true,
     },
-    plugins: [
-        babel({
-            exclude: "node_modules/**"
-        }),
-        uglify()
-    ],
+    {
+      file: pkg.module,
+      format: "es",
+      exports: "named",
+      sourcemap: true,
+    },
+  ],
+  plugins: [
+    resolve(),
+    typescript({
+      rollupCommonJSResolveHack: true,
+      clean: true,
+    }),
+    commonjs(),
+  ],
 };
-export default config;
