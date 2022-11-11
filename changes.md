@@ -1,6 +1,7 @@
 ## Changes
-### Version 0.2.3
+### Version 0.2.4
 
-* Check if window scope is available before accessing getComputedStyle
+* Converted to functional component
+* Fixed bug caused by invalid call to getComputedStyle()
 
 

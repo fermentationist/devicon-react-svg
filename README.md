@@ -75,7 +75,7 @@ const Demo = props => {
 ---
 ## Credits
 
-**devicon-react-svg** was made by Dennis Hodges, a Javascript developer.
+**devicon-react-svg** was made by Dennis Hodges, a JavaScript developer.
 
 Thank you to [Theodore Vorillas](https://www.vorillaz.com/), who created the font and icon collection that this component is based on, and which is the source of all of the svg path data used in this package.
 
